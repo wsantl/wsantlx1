@@ -1,0 +1,121 @@
+.projects-section {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #00000066;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.carousel-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff15;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  color: #eee;
+}
+
+.project-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #1f6feb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background-color: #1158c7;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .carousel-button {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+  }
+}

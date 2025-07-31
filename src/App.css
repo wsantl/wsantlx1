@@ -1,0 +1,53 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e0e;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Seções */
+.section {
+  padding: 60px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+section > * {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+}

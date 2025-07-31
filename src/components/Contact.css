@@ -1,0 +1,51 @@
+.contato-section {
+  background: #f9f9f909;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contato-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e7e5e5;
+  font-weight: 600;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  font-family: inherit;
+}
+
+.contato-form textarea {
+  min-height: 120px;
+}
+
+.contato-form button {
+  padding: 12px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contato-form button:hover {
+  background: #009acd;
+}
