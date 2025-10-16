@@ -19,8 +19,8 @@ function ContentBio() {
           </p>
 
           <div className="bio-links">
-            <a href="https://github.com/wsantl" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+            <a href="https://github.com/wsantl" target="">GitHub</a>
+            <a href="https://linkedin.com/in/seuusuario" target="">LinkedIn</a>
           </div>
         </div>
       </div>
